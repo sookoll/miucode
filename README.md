@@ -32,7 +32,7 @@ It is successor of:
 2. To keep build as minimal as it can, copy only needed files!
 3. To run r optimizer:
 
-    $ node tools/r.js -o tools/build.js
+        $ node tools/r.js -o tools/build.js
     
 4. Build will create dist folder with optimized application.
 
