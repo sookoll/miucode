@@ -1,4 +1,4 @@
-miucode-0.2.beta
+miucode
 ================
 
 It is successor of:  
