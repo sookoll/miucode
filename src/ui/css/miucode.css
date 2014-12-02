@@ -1,0 +1,112 @@
+/*
+ * Miucode text editor
+ * Author: Mihkel Oviir
+ * This work is licensed under MIT License, see http://www.opensource.org/licenses/mit-license.php
+ */
+
+html, body {
+	position: relative;
+	height:100%;
+	background:#eee
+}
+
+/* login */
+#loginform {
+	width:400px;
+	margin:150px auto;
+}
+
+#loginform .input {
+	margin-bottom:10px
+}
+
+header {
+	position: fixed;
+    top:0;
+    left:0;
+    padding:10px 0;
+	background:#666;
+	box-shadow: 0 0 10px #333;
+    height: 60px;
+    width: 100%;
+    z-index: 2
+}
+header .title h1 {
+	color: #ddd;
+	font-weight:normal;
+	margin:0;
+    font-size: 28px;
+}
+header .title .version {
+    color: #ddd;
+}
+header .toolbar>div {
+    margin-left: 6px
+}
+
+section {
+    box-sizing: border-box;
+    padding-top: 60px;
+    height:100%;
+    position: relative;
+    z-index: 1;
+}
+
+#explorer {
+	float:left;
+	width:300px;
+	height:100%;
+	background:#ddd;
+	border-right:1px solid #ccc;
+}
+
+#explorer ul.jqueryFileTree {
+	font-size:14px
+}
+
+#explorer .progress-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+#explorer .progress-bar {
+    height:2px;
+    background: blue;
+}
+
+#editor {
+	position: relative;
+	height:100%;
+	margin-left:300px;
+}
+
+#editor textarea {
+	display:block;
+	height:100%;
+	width:100%;
+	border:none;
+	outline: none;
+}
+
+#editor .CodeMirror, #editor .CodeMirror-scroll {
+	height:100%;
+}
+#editor .activeline {
+	background: #f6fcff !important;
+}
+
+#editor .tools {
+	display:none;
+	opacity:0.2;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	transition: all 250ms ease-in-out;
+	z-index: 100
+}
+
+#editor .tools:hover {
+	opacity:1;
+}

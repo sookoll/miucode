@@ -1,0 +1,116 @@
+.jq-explorer {
+    overflow-y: auto;
+    overflow-x: hidden
+}
+.jq-explorer .bar {
+    padding: 6px 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative
+}
+.jq-explorer ul {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	padding: 10px;
+	margin: 0px;
+}
+
+.jq-explorer ul li {
+	list-style: none;
+	padding: 0px;
+	padding-left: 20px;
+	margin: 0px;
+	white-space: nowrap;
+    position: relative;
+    overflow-x: hidden
+}
+
+.jq-explorer ul li a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	padding: 0px 2px;
+}
+
+.jq-explorer ul li.hover a,
+.jq-explorer ul li.active a {
+	background: #ccc;
+}
+.jq-explorer ul li.active a {
+	font-weight: bold
+}
+.jq-explorer ul li a.tool {
+    position: absolute;
+    font-weight: normal;
+    top: 0;
+    right: 0;
+    padding: 3px
+}
+
+/* Core Styles */
+.jq-explorer ul li.directory { background: url(images/directory.png) left top no-repeat; }
+.jq-explorer ul li.expanded { background: url(images/folder_open.png) left top no-repeat; }
+.jq-explorer ul li.file { background: url(images/file.png) left top no-repeat; }
+.jq-explorer ul li.wait { background: url(images/spinner.gif) left top no-repeat; }
+/* File Extensions*/
+.jq-explorer ul li.ext_3gp { background: url(images/film.png) left top no-repeat; }
+.jq-explorer ul li.ext_afp { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_afpa { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_asp { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_aspx { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_avi { background: url(images/film.png) left top no-repeat; }
+.jq-explorer ul li.ext_bat { background: url(images/application.png) left top no-repeat; }
+.jq-explorer ul li.ext_bmp { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_c { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_cfm { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_cgi { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_com { background: url(images/application.png) left top no-repeat; }
+.jq-explorer ul li.ext_cpp { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_css { background: url(images/css.png) left top no-repeat; }
+.jq-explorer ul li.ext_doc, .jq-explorer ul li.ext_docx { background: url(images/doc.png) left top no-repeat; }
+.jq-explorer ul li.ext_exe { background: url(images/application.png) left top no-repeat; }
+.jq-explorer ul li.ext_gif { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_fla { background: url(images/flash.png) left top no-repeat; }
+.jq-explorer ul li.ext_h { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_htm { background: url(images/html.png) left top no-repeat; }
+.jq-explorer ul li.ext_html { background: url(images/html.png) left top no-repeat; }
+.jq-explorer ul li.ext_jar { background: url(images/java.png) left top no-repeat; }
+.jq-explorer ul li.ext_jpg { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_jpeg { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_JPG { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_JPEG { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_js { background: url(images/script.png) left top no-repeat; }
+.jq-explorer ul li.ext_lasso { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_log { background: url(images/txt.png) left top no-repeat; }
+.jq-explorer ul li.ext_m4p { background: url(images/music.png) left top no-repeat; }
+.jq-explorer ul li.ext_md { background: url(images/txt.png) left top no-repeat; }
+.jq-explorer ul li.ext_mov { background: url(images/film.png) left top no-repeat; }
+.jq-explorer ul li.ext_mp3 { background: url(images/music.png) left top no-repeat; }
+.jq-explorer ul li.ext_mp4 { background: url(images/film.png) left top no-repeat; }
+.jq-explorer ul li.ext_mpg { background: url(images/film.png) left top no-repeat; }
+.jq-explorer ul li.ext_mpeg { background: url(images/film.png) left top no-repeat; }
+.jq-explorer ul li.ext_ogg { background: url(images/music.png) left top no-repeat; }
+.jq-explorer ul li.ext_pcx { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_pdf { background: url(images/pdf.png) left top no-repeat; }
+.jq-explorer ul li.ext_php { background: url(images/php.png) left top no-repeat; }
+.jq-explorer ul li.ext_png { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_ppt { background: url(images/ppt.png) left top no-repeat; }
+.jq-explorer ul li.ext_psd { background: url(images/psd.png) left top no-repeat; }
+.jq-explorer ul li.ext_pl { background: url(images/script.png) left top no-repeat; }
+.jq-explorer ul li.ext_py { background: url(images/script.png) left top no-repeat; }
+.jq-explorer ul li.ext_rb { background: url(images/ruby.png) left top no-repeat; }
+.jq-explorer ul li.ext_rbx { background: url(images/ruby.png) left top no-repeat; }
+.jq-explorer ul li.ext_rhtml { background: url(images/ruby.png) left top no-repeat; }
+.jq-explorer ul li.ext_rpm { background: url(images/linux.png) left top no-repeat; }
+.jq-explorer ul li.ext_ruby { background: url(images/ruby.png) left top no-repeat; }
+.jq-explorer ul li.ext_sql { background: url(images/db.png) left top no-repeat; }
+.jq-explorer ul li.ext_swf { background: url(images/flash.png) left top no-repeat; }
+.jq-explorer ul li.ext_tif { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_tiff { background: url(images/picture.png) left top no-repeat; }
+.jq-explorer ul li.ext_txt { background: url(images/txt.png) left top no-repeat; }
+.jq-explorer ul li.ext_vb { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_wav { background: url(images/music.png) left top no-repeat; }
+.jq-explorer ul li.ext_wmv { background: url(images/film.png) left top no-repeat; }
+.jq-explorer ul li.ext_xls, .jq-explorer ul li.ext_xlsx { background: url(images/xls.png) left top no-repeat; }
+.jq-explorer ul li.ext_xml { background: url(images/code.png) left top no-repeat; }
+.jq-explorer ul li.ext_zip { background: url(images/zip.png) left top no-repeat; }
