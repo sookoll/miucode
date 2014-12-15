@@ -20,7 +20,7 @@ It is successor of:
 
 ## Components
 
-1. jQuery Explorer [https://github.com/sookoll/jquery-explorer](https://github.com/sookoll/jquery-explorer)
+1. jQuery Explorer [https://github.com/sookoll/jquery.explorer](https://github.com/sookoll/jquery.explorer)
 2. Codemirror [http://codemirror.net/](http://codemirror.net/)
 3. Bootstrap [http://getbootstrap.com/](http://getbootstrap.com/)
 4. jQuery file Upload [https://blueimp.github.io/jQuery-File-Upload/](https://blueimp.github.io/jQuery-File-Upload/)
