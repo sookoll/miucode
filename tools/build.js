@@ -10,6 +10,5 @@
     ],
     optimize: "uglify2",
     optimizeCss: "standard",
-    removeCombined: true,
-    //fileExclusionRegExp: /libs/
+    removeCombined: true
 })
